@@ -4,6 +4,10 @@ buildscript {
         compose_version = '1.0.1'
     }
     repositories {
+        maven {
+            url "https://jitpack.io"
+            credentials { username authToken }
+        }
         google()
         mavenCentral()
     }
